@@ -185,6 +185,7 @@ export default function Hero() {
                 src="/profile.jpg"
                 alt="Harith Manjuka — SE Undergraduate & Full Stack Developer"
                 fill
+                sizes="(max-width: 768px) 256px, 320px"
                 className="object-cover"
                 priority
               />
