@@ -65,11 +65,11 @@ export default function Contact() {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="text-[var(--text-muted)] text-xs mb-1.5 block">Your Name</label>
-                  <input type="text" name="name" placeholder="John Doe" required className="form-input" />
+                  <input type="text" name="name" placeholder="harith manjuka" required className="form-input" />
                 </div>
                 <div>
                   <label className="text-[var(--text-muted)] text-xs mb-1.5 block">Your Email</label>
-                  <input type="email" name="email" placeholder="john@example.com" required className="form-input" />
+                  <input type="email" name="email" placeholder="your@example.com" required className="form-input" />
                 </div>
               </div>
               <div>
