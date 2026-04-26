@@ -27,8 +27,8 @@ export default function Hero() {
     >
       {/* Background orbs */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="orb-1 absolute top-1/4 left-1/4 w-72 h-72 rounded-full bg-violet-600/15 dark:bg-violet-600/20 blur-[80px]" />
-        <div className="orb-2 absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-cyan-500/10 dark:bg-cyan-500/15 blur-[100px]" />
+        <div className="orb-1 absolute top-1/4 left-1/4 w-72 h-72 rounded-full bg-violet-600/25 dark:bg-violet-600/20 blur-[80px]" />
+        <div className="orb-2 absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-cyan-500/18 dark:bg-cyan-500/15 blur-[100px]" />
       </div>
 
       {/* Subtle grid */}

@@ -133,15 +133,26 @@ export default function About() {
               </p>
             </div>
 
-            <a
-              href="/resume.pdf"
-              download
-              className="btn-primary inline-flex items-center gap-2 px-6 py-3 text-sm mt-8"
-            >
-              <span className="flex items-center gap-2">
-                <Download size={16} /> Download Resume
-              </span>
-            </a>
+            <div className="flex flex-wrap gap-3 mt-8">
+              <a
+                href="/resume.pdf"
+                download
+                className="btn-primary inline-flex items-center gap-2 px-6 py-3 text-sm"
+              >
+                <span className="flex items-center gap-2">
+                  <Download size={16} /> Download Resume
+                </span>
+              </a>
+              <a
+                href="/Harith_Manjuka_Academic_status.pdf"
+                download
+                className="btn-outline inline-flex items-center gap-2 px-6 py-3 text-sm"
+              >
+                <span className="flex items-center gap-2">
+                  <Download size={16} /> Academic Status
+                </span>
+              </a>
+            </div>
           </motion.div>
 
           {/* Right — skill cards */}

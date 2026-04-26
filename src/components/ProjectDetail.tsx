@@ -4,7 +4,7 @@ import { Project } from "@/data/projects.data";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowLeft, ExternalLink, Users, Clock, Briefcase, Zap } from "lucide-react";
+import { ArrowLeft, ExternalLink, Users, Clock, Briefcase, Zap, Download } from "lucide-react";
 import { FaGithub, FaYoutube } from "react-icons/fa";
 import ProjectNavbar from "@/components/ProjectNavbar";
 import Footer from "@/components/Footer";
@@ -16,6 +16,8 @@ type Props = {
 };
 
 export default function ProjectDetail({ project, prevProject, nextProject }: Props) {
+  const isPDF = project.liveLabel === "Download PDF";
+
   return (
     <>
       <ProjectNavbar />
@@ -121,14 +123,17 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
                       <FaGithub size={15} /> View Code
                     </span>
                   </a>
+
                   {project.live ? (
                     <a
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
+                      download={isPDF ? true : undefined}
                       className="btn-outline flex items-center gap-2 px-5 py-2.5 text-sm"
                     >
-                      <FaYoutube size={15} /> {project.liveLabel}
+                      {isPDF ? <Download size={15} /> : <FaYoutube size={15} />}
+                      {project.liveLabel}
                     </a>
                   ) : (
                     <span className="btn-outline flex items-center gap-2 px-5 py-2.5 text-sm opacity-40 cursor-not-allowed">
@@ -276,14 +281,20 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
                     </span>
                     <ExternalLink size={11} className="ml-auto text-[var(--text-muted)] opacity-0 group-hover:opacity-100 transition-opacity" />
                   </a>
+
                   {project.live && (
                     <a
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
+                      download={isPDF ? true : undefined}
                       className="flex items-center gap-3 p-3 rounded-xl hover:bg-[var(--bg-card)] border border-transparent hover:border-[var(--border)] transition-all duration-200 group"
                     >
-                      <FaYoutube size={16} className="text-[var(--text-muted)] group-hover:text-red-500 transition-colors" />
+                      {isPDF ? (
+                        <Download size={16} className="text-[var(--text-muted)] group-hover:text-violet-500 transition-colors" />
+                      ) : (
+                        <FaYoutube size={16} className="text-[var(--text-muted)] group-hover:text-red-500 transition-colors" />
+                      )}
                       <span className="text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
                         {project.liveLabel}
                       </span>

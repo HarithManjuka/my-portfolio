@@ -1,6 +1,3 @@
-import { ExternalLink } from "lucide-react";
-import { FaYoutube } from "react-icons/fa";
-
 export type Project = {
   slug: string;
   title: string;
@@ -107,6 +104,64 @@ export const projects: Project[] = [
       { title: "Incident Reporting", desc: "Real-time field incidents with photo evidence" },
       { title: "Production Metrics", desc: "Daily harvest tracking from field to factory" },
       { title: "Transport Logistics", desc: "Batch assignment and delivery tracking" },
+    ],
+  },
+  {
+    slug: "dailybloom",
+    title: "DailyBloom",
+    tagline: "Android wellness app for building sustainable healthy habits",
+    description:
+      "An Android wellness application promoting personal wellbeing through structured habit management, mood tracking with emoji journaling, hydration reminders, and a gamified achievement system built on behavioral psychology principles.",
+    longDescription: [
+      "DailyBloom is a personal wellness companion built for Android, designed to help users establish and maintain sustainable healthy routines. The app integrates behavioral psychology principles into a clean, intuitive mobile experience making it easy to track habits, log moods, and stay hydrated without friction.",
+      "The daily habit tracker lets users create, edit, and delete personalized wellness habits like exercise, meditation, and hydration. Visual progress indicators and streak counters give users a clear sense of momentum, while the mood journal with emoji selectors allows them to log emotional patterns over time and spot trends in their wellbeing.",
+      "A gamified achievement system keeps users motivated through badges like First Habit, Water Champion, and Mood Tracker. Smart hydration reminders powered by AlarmManager and WorkManager ensure timely nudges throughout the day, making DailyBloom a lightweight but effective tool for anyone building a healthier lifestyle.",
+    ],
+    tech: ["Kotlin", "Android Studio", "Activities & Fragments", "SharedPreferences", "AlarmManager", "WorkManager"],
+    github: "https://github.com/HarithManjuka/DailyBloom",
+    live: "/dailybloom.pdf",
+    liveLabel: "Download PDF",
+    image: "/mobileApp-1.png",
+    tag: "Android App",
+    tagColor: "text-pink-500 bg-pink-500/10 border-pink-500/20",
+    role: "Solo Android Developer",
+    contribution: "End-to-end development",
+    duration: "1 month",
+    team: "1 member",
+    highlights: [
+      { title: "Daily Habit Tracker", desc: "Add, edit & delete personalized wellness habits with visual completion progress" },
+      { title: "Mood Journal", desc: "Log daily moods with emoji selectors and view historical emotional patterns" },
+      { title: "Hydration Reminders", desc: "Smart notifications via AlarmManager & WorkManager for timely water intake" },
+      { title: "Achievement System", desc: "Unlock badges like Week Warrior, Water Champion, and Month Master for consistency" },
+    ],
+  },
+  {
+    slug: "foundit",
+    title: "FoundIT",
+    tagline: "Campus lost & found system for university environments",
+    description:
+      "A mobile application that streamlines reporting, locating, and recovering lost items within a university campus. Provides a centralized platform for students to submit lost/found reports, manage claims, and receive real-time status notifications.",
+    longDescription: [
+      "FoundIT solves a common but frustrating campus problem: lost belongings with no easy way to recover them. The app provides a centralized digital lost and found platform where students can submit detailed reports, upload photographs, and pinpoint last known locations replacing scattered notice boards and group chats with a structured, searchable system.",
+      "The claim management flow is designed around trust and verification. When a student spots their item in the found listings, they can initiate a claim request that goes through a secure verification step before the handover is facilitated, reducing the risk of false claims and ensuring items reach their rightful owners.",
+      "Real-time notifications keep both reporters and claimants updated on every status change, while robust search and filter tools let users quickly narrow down reports by date, category, and campus location. Built entirely as a solo project, FoundIT demonstrates end-to-end Android development from UI design to local data persistence.",
+    ],
+    tech: ["Kotlin", "Android Studio", "Activities & Fragments", "SharedPreferences"],
+    github: "https://github.com/HarithManjuka/FoundIT",
+    live: "/foundit.pdf",
+    liveLabel: "Download PDF",
+    image: "/mobileApp-2.png",
+    tag: "Android App",
+    tagColor: "text-orange-500 bg-orange-500/10 border-orange-500/20",
+    role: "Solo Android Developer",
+    contribution: "End-to-end development",
+    duration: "1 month",
+    team: "1 member",
+    highlights: [
+      { title: "Lost & Found Reporting", desc: "Submit item details, photos, and last known location with ease" },
+      { title: "Claim Management", desc: "Secure item claiming through verification before handover" },
+      { title: "Real-time Notifications", desc: "Instant status updates on claim requests and item matches" },
+      { title: "Search & Filter", desc: "Filter reports by date, category, and campus location" },
     ],
   },
 ];
