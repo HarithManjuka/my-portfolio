@@ -135,7 +135,7 @@ export default function About() {
 
             <div className="flex flex-wrap gap-3 mt-8">
               <a
-                href="/resume.pdf"
+                href="/Harith_Manjuka_Resume_2026.pdf"
                 download
                 className="btn-primary inline-flex items-center gap-2 px-6 py-3 text-sm"
               >
