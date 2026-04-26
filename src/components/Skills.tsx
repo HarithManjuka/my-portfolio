@@ -3,11 +3,11 @@
 import { motion } from "framer-motion";
 import {
   SiJavascript, SiTypescript, SiPython, SiHtml5, SiCss, SiPhp,
-  SiCplusplus, SiKotlin,
+  SiCplusplus, SiKotlin, SiDotnet,
   SiReact, SiNextdotjs, SiTailwindcss,
   SiNodedotjs, SiExpress, SiMongodb, SiMysql,
   SiGit, SiGithub, SiDocker, SiPostman, SiFigma, SiVscodium, SiLinux,
-  SiPrisma, SiAndroidstudio, SiDotnet,
+  SiPrisma, SiAndroidstudio,
 } from "react-icons/si";
 import { FaJava, FaDatabase, FaC } from "react-icons/fa6";
 
