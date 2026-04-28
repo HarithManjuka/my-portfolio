@@ -4,17 +4,18 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Mail } from "lucide-react";
 
 const links = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home",           href: "#home"           },
+  { label: "About",          href: "#about"          },
+  { label: "Skills",         href: "#skills"         },
+  { label: "Projects",       href: "#projects"       },
+  { label: "Certifications", href: "#certifications" },
+  { label: "Contact",        href: "#contact"        },
 ];
 
 const socials = [
-  { icon: FaGithub, href: "https://github.com/HarithManjuka", label: "GitHub" },
-  { icon: FaLinkedin, href: "https://www.linkedin.com/in/harith-manjuka-6707792b9", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:harithmanjukaabekon11@gmail.com", label: "Email" },
+  { icon: FaGithub,   href: "https://github.com/HarithManjuka",                        label: "GitHub"   },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/harith-manjuka-6707792b9",     label: "LinkedIn" },
+  { icon: Mail,       href: "mailto:harithmanjukaabekon11@gmail.com",                   label: "Email"    },
 ];
 
 export default function Footer() {
@@ -36,7 +37,6 @@ export default function Footer() {
 
           {/* Brand + bio */}
           <div className="flex flex-col gap-3 max-w-xs">
-            {/* Wordmark — matches Navbar style */}
             <button
               onClick={() => scrollTo("#home")}
               className="flex items-center gap-0 w-fit group"
@@ -54,9 +54,7 @@ export default function Footer() {
 
             <p className="text-[var(--text-muted)] text-sm leading-relaxed">
               Undergraduate Software Engineer ·{" "}
-              <span className="text-[var(--text-secondary)]">
-                SLIIT, Sri Lanka
-              </span>
+              <span className="text-[var(--text-secondary)]">SLIIT, Sri Lanka</span>
             </p>
 
             {/* Social icons */}

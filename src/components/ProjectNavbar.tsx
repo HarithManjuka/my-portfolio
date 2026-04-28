@@ -7,11 +7,12 @@ import { useTheme } from "@/context/ThemeProvider";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/#about" },
-  { label: "Skills", href: "/#skills" },
-  { label: "Projects", href: "/#projects" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Home",           href: "/"                  },
+  { label: "About",          href: "/#about"            },
+  { label: "Skills",         href: "/#skills"           },
+  { label: "Projects",       href: "/#projects"         },
+  { label: "Certifications", href: "/#certifications"   },
+  { label: "Contact",        href: "/#contact"          },
 ];
 
 export default function ProjectNavbar() {
